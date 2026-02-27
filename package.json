@@ -1,0 +1,1 @@
+{"name": "lawerealestate-backend", "version": "1.0.0", "description": "Backend for real estate website", "main": "index.js", "scripts": { "test": "echo 'Error: no test specified' && exit 1" }, "keywords": ["real estate", "backend"], "author": "lawelawe379-ai", "license": "ISC"}
