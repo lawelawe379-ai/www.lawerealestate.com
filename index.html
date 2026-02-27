@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Homepage</title>
+    <title>Real Estate Management</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Lawere Real Estate</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#properties">Properties</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Real Estate Management</h1>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are dedicated to helping you find your dream home!</p>
-        </section>
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
 
-        <section id="properties">
-            <h2>Featured Properties</h2>
-            <p>Check out our latest listings.</p>
-        </section>
+    <section id="admin">
+        <h2>Account/Admin Section</h2>
+        <form id="property-form">
+            <label for="property-name">Property Name:</label>
+            <input type="text" id="property-name" name="property-name" required>
+            <br>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+            <br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="+1-234-567-8900" required>
+            <br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <br>
+            <button type="submit">Add Property</button>
+        </form>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for any inquiries.</p>
-        </section>
-    </main>
+    <section id="dashboard">
+        <h2>Property Management Dashboard</h2>
+        <div id="properties-list">
+            <!-- Dynamic property entries will be appended here -->
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Lawere Real Estate. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
