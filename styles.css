@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.header {
+  background: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.property-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.property-price {
+  color: #28a745;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #f8f9fa;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
